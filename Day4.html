@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 of HTML</title>
+</head>
+<body>
+    
+    <!-- Tables in HTML -->
+    <table border="1px" cellspacing="0px" cellpadding="10px">
+        <caption>Food Menu</caption>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Bread</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <hr>
+    
+    <!-- semantics in table: <thead>(to wrap table head),<tbody>(to wrap table body),<tfoot>(to wrap table foot) | <th> is used for heading of table and <td> is used for data of table -->
+    <table border="1px" cellspacing="0px" cellpadding="10px">
+        <caption>Food Menu</caption>
+        <!-- Table header -->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <td>Bread</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+
+    <!-- Colspan & Rowspan Attributes: used to create cells which spans over multiple rows or column -->
+    <table border="1px" cellspacing="0px" cellpadding="10px">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bread</td>
+                <td>20</td>
+                <td>0.3</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>20</td>
+                <td>0.24</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+</html>
