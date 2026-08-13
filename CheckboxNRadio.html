@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox and Radio Button</title>
+</head>
+<body>
+    <form action="/server">
+        <input type="checkbox" name="age" id="age" />
+        <label for="age">I am above 18 years of age</label>
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple" />
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana" value="banana" />
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit" id="orange" value="orange" />
+            <label for="orange">Orange</label>
+        </div>
+        <div>
+            <input type="checkbox" name="vehicle" id="car" value="car" />
+            <label for="car">Car</label>
+            <input type="checkbox" name="vehicle" id="bike" value="bike" />
+            <label for="bike">Bike</label>
+            <input type="checkbox" name="vehicle" id="bus" value="bus" />
+            <label for="bus">Bus</label>
+        </div>
+
+        <!-- Select element -->
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" id="volume" min="0" max="100" step="10" value="40"/>
+
+        <br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
