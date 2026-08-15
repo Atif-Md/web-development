@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <!-- Forms in HTML are used to collect user input. The <form> element is used to create a form, and it can contain various input elements such as text fields, checkboxes, radio buttons, and submit buttons. -->
+    
+    <!-- Action attribute: Specifies where to send the form data when the form is submitted. <form action="/action.php" method="post"> -->
+    
+    <!-- Form elements -->
+    <!-- 1. Input: used to multiple form control. there are multiple types of input that can created using type attribute.
+    <input /> <hr>
+    <input type="text"> <hr>
+    <input type="password"> <hr>
+    <input type="checkbox"> <hr>
+    <input type="number"> <hr>
+    <input type="radio"> <hr>
+    <input type="submit"> <hr>
+    <input type="time"> <hr>
+    <input type="date"> <hr>
+    <input type="file"> <hr>
+    <input type="color"> 
+    -->
+
+    <!-- Label element represents a caption for an input element -->
+
+    <form>
+        <!-- <label>
+            Username: <input type="text" placeholder="Enter username">
+        </label> -->
+        <label for="username">Username: </label>
+        <input type="text" id="username" placeholder="Enter username">
+        <br>
+
+        <!-- <label>
+            Password: <input type="password" placeholder="Enter password">
+        </label> -->
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter password">
+        <br>
+        
+        <!-- <label>
+            Captcha: <input type="text" placeholder="Enter captcha">
+        </label> -->
+        <label for="captcha">Captcha: </label>
+        <input type="text" id="captcha" placeholder="Enter captcha">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
